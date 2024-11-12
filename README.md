@@ -28,4 +28,4 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [APACHE License](LICENSE).
