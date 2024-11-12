@@ -218,8 +218,11 @@ function changeTitleRandomly() {
     const titles = [
         "Know Their Name",
         "Empowering Women's Voices",
-        "Her Story Matters",
-        "Women Who Changed the World"
+        "Their Story Matters",
+        "Women Who Changed the World",
+        "Legends of Risilience",
+        "They Will Be Known",
+        "Never forget Them"
     ];
     const randomTitle = titles[Math.floor(Math.random() * titles.length)];
     const titleElement = document.getElementById('page-title');
