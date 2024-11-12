@@ -214,6 +214,20 @@ function renderTimeline() {
     }
 }
 
+function changeTitleRandomly() {
+    const titles = [
+        "Know Their Name",
+        "Empowering Women's Voices",
+        "Her Story Matters",
+        "Women Who Changed the World"
+    ];
+    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+    const titleElement = document.getElementById('page-title');
+    if (titleElement) {
+        titleElement.textContent = randomTitle;
+    }
+}
+
 // Add event listener to the flashcard container
 document.getElementById('flashcard-container')?.addEventListener('click', () => {
     flipCard();
@@ -228,4 +242,7 @@ if (document.getElementById('flashcard-text')) {
 }
 
 // Render the timeline when the page loads
-window.onload = renderTimeline;
+window.onload = () => {
+    renderTimeline();
+    changeTitleRandomly();
+}
