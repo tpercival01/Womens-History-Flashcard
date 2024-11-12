@@ -60,6 +60,12 @@ body {
     justify-content: space-between;
 }
 
+.timeline-card .name-text{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .timeline-card .fact-text {
     font-size: 16px;
     margin-bottom: 10px;
