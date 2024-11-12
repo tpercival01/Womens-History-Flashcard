@@ -207,7 +207,7 @@ function renderTimeline() {
             if (milestoneIndex < womenFacts.length) {
                 const milestoneCard = document.createElement('div');
                 milestoneCard.className = 'timeline-card';
-                milestoneCard.innerHTML = `<div class="fact-text">${womenFacts[milestoneIndex].fact}</div><div class="year-text">${womenFacts[milestoneIndex].year}</div>`;
+                milestoneCard.innerHTML = `<div class="name-text">${womenFacts[milestoneIndex].name}</div><div class="fact-text">${womenFacts[milestoneIndex].fact}</div><div class="year-text">${womenFacts[milestoneIndex].year}</div>`;
                 timelineElement.appendChild(milestoneCard);
             }
         });
