@@ -160,8 +160,6 @@ const womenFacts = [
         source: 'https://www.britannica.com/biography/Victoria-Woodhull'
     }
 ];
-
-
 let currentFactIndex = null;
 let isFlipped = false;
 
@@ -182,6 +180,7 @@ function flipCard() {
         sourceLink.href = womenFacts[currentFactIndex].source;
         sourceLink.style.display = 'block';
         isFlipped = true;
+        unlockMilestone(currentFactIndex);
     } else {
         showFact();
         sourceLink.style.display = 'none';
@@ -216,7 +215,12 @@ function renderTimeline() {
 }
 
 // Add event listener to the flashcard container
-document.getElementById('flashcard-container')?.addEventListener('click', flipCard);
+document.getElementById('flashcard-container')?.addEventListener('click', () => {
+    flipCard();
+    if (!isFlipped) {
+        showFact();
+    }
+});
 
 // Initial fact display
 if (document.getElementById('flashcard-text')) {
